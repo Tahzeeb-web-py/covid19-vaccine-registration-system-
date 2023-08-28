@@ -192,7 +192,7 @@ def logincheck():
 
 
 #.........................................................admindashboard....................................................
-def adminpage():
+def adminpage():#admin function
     global ap
     ad.destroy()
     #loginsms()
@@ -210,7 +210,7 @@ def adminpage():
      vaccine TEXT NOT NULL,
      dose TEXT NOT NULL,
      date1 TEXT NOT NULL);''')
-    cur1.execute("SELECT * FROM Registration");
+    cur1.execute("SELECT * FROM Registration");#Creating new table in the database called as CovidVaccine.db
     
 
     
