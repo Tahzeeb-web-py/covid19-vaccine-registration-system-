@@ -70,7 +70,7 @@ def Available_vaccine():
     co.commit()#Commiting the changes of CovidVaccine.db
     co.close()#closing the database.
 
-def Available_Beds():
+def Available_Beds():#creating new function.
     c=sqlite3.connect('CovidVaccine.db')#connected to the database called: CovidVaccine.db
     c.execute('''CREATE TABLE IF NOT EXISTS Available_beds
     (ID INT NOT NULL PRIMARY KEY, 
