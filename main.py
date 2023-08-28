@@ -76,18 +76,18 @@ def Available_Beds():
     (ID INT NOT NULL PRIMARY KEY, 
     oxygenbed INT NOT NULL,
     vantilatorbed INT NOT NULL,
-    normalbed INT NOT NULL);''')
-    oxygen_bed=b1.get()
-    vantilator_bed=b2.get()
-    normal_bed=b3.get()
+    normalbed INT NOT NULL);''')##creating new table if not present in the database called CovidVaccine.db
+    oxygen_bed=b1.get()#taking values to update
+    vantilator_bed=b2.get()#taking values to update
+    normal_bed=b3.get()#taking values to update
     
    # c.execute("INSERT INTO Available_beds(ID, oxygenbed, vantilatorbed, normalbed) VALUES(3,0,0,0)");
-    c.execute('''UPDATE Available_beds  SET oxygenbed=? WHERE ID=1''',(oxygen_bed,))
-    c.execute("UPDATE Available_beds  SET vantilatorbed=? WHERE ID=2",(vantilator_bed,))
-    c.execute("UPDATE Available_beds  SET normalbed=? WHERE ID=3", (normal_bed,))
-    c.commit()
-    c.close()
-    print(oxygen_bed, vantilator_bed, normal_bed)
+    c.execute('''UPDATE Available_beds  SET oxygenbed=? WHERE ID=1''',(oxygen_bed,))#Updating existing values with new values
+    c.execute("UPDATE Available_beds  SET vantilatorbed=? WHERE ID=2",(vantilator_bed,))#Updating existing values with new values
+    c.execute("UPDATE Available_beds  SET normalbed=? WHERE ID=3", (normal_bed,))#Updating existing values with new values
+    c.commit()#Commiting all the new changes
+    c.close()#closing the database.
+   ## print(oxygen_bed, vantilator_bed, normal_bed)#printing all the values to check whether the output is as per the expections.
 
 def update():
    global b1, b2, b3, bhartakboi, Astrazenca, sputnik, sputnikv, drdo
