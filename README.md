@@ -3,7 +3,7 @@
 
 
 # Vaccine Registration System for Hospital(Basic)
-So, This is an Python based vaccines registrations system with GUI(Graphical User Interface). This project i had developed in my Polytechnic for a python subject. This project is my First python, or i can say first project deveoped by me in my career. When i develped this project i don't know about Git and Github, thats is the reason i am push this code now. 
+So, This is an Python based vaccines registrations system with GUI(Graphical User Interface). This project i had developed in my Polytechnic for a python subject. This project is my First python, or i can say first project deveoped by me in my career. When i develped this project i don't know about Git and Github, thats is the reason i am push this code now. I had developed this project in 46 days in the year 2020 in Pandamic. 
 
 This project is consist of admin panel, and Registration panel. This project can be handled by Hospital or clinic management. Registraiton of vaccine, management of bed, management of vaccines this kind of functionalities are present in this project. twilio message and  SMTP email sending libraries are used. sqlite3 database is used to storing the data, TKinter an Python based GUI developing library. This mixture of all the technologies, library is used in the project.
 This project is not a Hi-tech or advanced version, its an easy to execute and basic version project.
