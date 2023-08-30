@@ -319,10 +319,10 @@ def onclick(nameofp, dateocine):#creating new module with passing two parameter.
 
 
 #................................................login clear fieldcode...........................................................   
-def reset():
-    user.delete(0, END)
-    passw.delete(0, END)
-    return
+def reset():#reset function.
+    user.delete(0, END)  #delete all the data of field.
+    passw.delete(0, END)#delete all the data of field.
+    return#returning the blank....
 #................................................................................................................................
 
 
