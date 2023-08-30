@@ -398,9 +398,9 @@ def sendsms(mono1):
     Clienmt=Client("", "" )#twillio token and key paste it
     my_cell=97#Enter your Mobile No. Here
     my_twilio=55#Enter your Twilio Mobile no here(you first have to register your self on twillio.com, for more info goto the youtube)
-    messagesms=Clienmt.messages('Hello User, \n This Project is developed by Mohd Tahzeeb Khan............\n Roll no. 32............Enrollment no:1800760291 \n Subject: Python Programming \n  Subject Teacher: Pallavi Maam \n Session: 2020-21 \n Thank you user to use this covid-19 vaccination software, and please vaccinate your self and be safe from SARcovid-19.......\n Have a nice data')
-    Clienmt.messages.create(to=my_cell, from_= my_twilio, body=messagesms)
-    return
+    messagesms=Clienmt.messages('Hello User, \n This Project is developed by Mohd Tahzeeb Khan............\n Roll no. 32............Enrollment no:1800760291 \n Subject: Python Programming \n  Subject Teacher: Pallavi Maam \n Session: 2020-21 \n Thank you user to use this covid-19 vaccination software, and please vaccinate your self and be safe from SARcovid-19.......\n Have a nice data')#message to be send
+    Clienmt.messages.create(to=my_cell, from_= my_twilio, body=messagesms)#creating and sending msz
+    return#return.....
 #.............................................................................................................................
 
 
