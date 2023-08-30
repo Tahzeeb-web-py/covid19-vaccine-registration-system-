@@ -166,23 +166,23 @@ def update():#function to update vaccine.
     
 
 #....................................................login identification function..........................................................
-def logincheck():
-    e_1=user.get()
-    e_2=passw.get()
+def logincheck():#login check module
+    e_1=user.get() #get the id and password from entry module.
+    e_2=passw.get()#get the id and password from entry module.
 
-    idn='tahzeeb'
-    pa='12345'
+    idn='tahzeeb'# id and password is hardcoded.
+    pa='12345'# id and password is hardcoded.
+ 
+    if(e_1=="") and (e_2==""):#condition if entry is emply.
+        tkinter.messagebox.showinfo("Waring","Please Enter Details")#msz to be show when condition ids true.
 
-    if(e_1=="") and (e_2==""):
-        tkinter.messagebox.showinfo("Waring","Please Enter Details")
-
-    elif(e_1==idn and e_2==pa):
+    elif(e_1==idn and e_2==pa):#if condtion is true.
       
-       adminpage()
+       adminpage()#this module will be run when condition is true.
 
     else:
-        tkinter.messagebox.showinfo("Warning", "Incorrect ID/Password")
-        ad.destroy()
+        tkinter.messagebox.showinfo("Warning", "Incorrect ID/Password")#show the msz
+        ad.destroy()#destroy..... 
 #................................................................................................................................
 
 
@@ -306,9 +306,9 @@ def adminpage():#admin function
 
 
 #................................................Popup msz code...........................................................   
-def onclick(nameofp, dateocine):
-    reg.destroy()
-    tkinter.messagebox.showinfo("Lifecare Hospitals" +nameofp, "Your vaccine is booked, please check you Email, & SMS box....\n vaccination date:" +dateocine)
+def onclick(nameofp, dateocine):#creating new module with passing two parameter.
+    reg.destroy()#destroy
+    tkinter.messagebox.showinfo("Lifecare Hospitals" +nameofp, "Your vaccine is booked, please check you Email, & SMS box....\n vaccination date:" +dateocine)#showing the msz.....
     
 #................................................................................................................................
 
