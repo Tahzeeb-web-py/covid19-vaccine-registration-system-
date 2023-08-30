@@ -89,21 +89,21 @@ def Available_Beds():#creating new function.
     c.close()#closing the database.
    ## print(oxygen_bed, vantilator_bed, normal_bed)#printing all the values to check whether the output is as per the expections.
 
-def update():
-   global b1, b2, b3, bhartakboi, Astrazenca, sputnik, sputnikv, drdo
-   ava=tkinter.Tk()
-   ava.geometry("825x800")
-   ava["bg"]= "NavajoWhite2"  
-   ava.title("Life Care service, Update panel")
+def update():#function to update vaccine.
+   global b1, b2, b3, bhartakboi, Astrazenca, sputnik, sputnikv, drdo#variables for storing value, this variables are declare as Global.
+   ava=tkinter.Tk()#creating instance of tkinter
+   ava.geometry("825x800")#configration of size of window.
+   ava["bg"]= "NavajoWhite2"  #background color configration for window.
+   ava.title("Life Care service, Update panel")#configure the title.
    
-   oxybed=IntVar()
-   vantibed=IntVar()
-   Norbed=IntVar()
-   sputnik=IntVar(ava)
-   sputnikv=IntVar(ava)
-   bhartakboi=IntVar(ava)
-   Astrazenca=IntVar(ava)
-   drdo=IntVar(ava)
+   oxybed=IntVar()  #declaring local variable to store values for bed.
+   vantibed=IntVar()#declaring local variable to store values for bed.
+   Norbed=IntVar()#declaring local variable to store values for bed.
+   sputnik=IntVar(ava)    #declaring local variable to store values for vaccine
+   sputnikv=IntVar(ava)#declaring local variable to store values for vaccine
+   bhartakboi=IntVar(ava)#declaring local variable to store values for vaccine
+   Astrazenca=IntVar(ava)#declaring local variable to store values for vaccine
+   drdo=IntVar(ava)#declaring local variable to store values for vaccine
    
    
    top=Frame(ava, width=750, height= 150, bd= 8, relief="raise")
