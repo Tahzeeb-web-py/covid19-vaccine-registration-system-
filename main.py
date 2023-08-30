@@ -106,62 +106,62 @@ def update():#function to update vaccine.
    drdo=IntVar(ava)#declaring local variable to store values for vaccine
    
    
-   top=Frame(ava, width=750, height= 150, bd= 8, relief="raise")
-   top.place(x=50,y=20)
-   tkinter.Label(top, text="LifeCare Hospital Service", font=('arial', 38, 'bold')).place(x=75,y=40)
+   top=Frame(ava, width=750, height= 150, bd= 8, relief="raise")#initializing the frame
+   top.place(x=50,y=20)#position for frame
+   tkinter.Label(top, text="LifeCare Hospital Service", font=('arial', 38, 'bold')).place(x=75,y=40)#creating labels.
    
-   left=Frame(ava, width=350, height= 500, bd= 8, relief="raise")
-   left.place(x=50,y=200)
-   right=Frame(ava, width=380, height= 500, bd= 8, relief="raise")
-   right.place(x=410,y=200)
+   left=Frame(ava, width=350, height= 500, bd= 8, relief="raise")#initailizing frame
+   left.place(x=50,y=200)#placing a position
+   right=Frame(ava, width=380, height= 500, bd= 8, relief="raise")#initailizing frame
+   right.place(x=410,y=200)#placing a position
    
    
    
    #Bed Update
-   tkinter.Label(left, text="Beds Available", font=('arial', 20, 'bold')).place(x=70, y=20)
-   tkinter.Label(left, text="Oxygen Bed", font=('arial', 15, 'bold')).place(x=20, y=80)
-   b1=Entry(left, width=15, textvariable=oxybed)
-   b1.place(x=170, y=84)
-   tkinter.Label(left, text="Vantilator Bed", font=('arial', 15, 'bold')).place(x=20, y=160)
-   b2=Entry(left, width=15, textvariable=vantibed)
-   b2.place(x=170, y=164)
-   tkinter.Label(left, text="Normal Bed", font=('arial', 15, 'bold')).place(x=20, y=240)
-   b3=Entry(left, width=15, textvariable=Norbed)
-   b3.place(x=170, y=244)
+   tkinter.Label(left, text="Beds Available", font=('arial', 20, 'bold')).place(x=70, y=20)#creating new labels
+   tkinter.Label(left, text="Oxygen Bed", font=('arial', 15, 'bold')).place(x=20, y=80)#creating new labels
+   b1=Entry(left, width=15, textvariable=oxybed)#new entry to input
+   b1.place(x=170, y=84)#placing the entry
+   tkinter.Label(left, text="Vantilator Bed", font=('arial', 15, 'bold')).place(x=20, y=160)#creating new labels
+   b2=Entry(left, width=15, textvariable=vantibed)#new entry to input
+   b2.place(x=170, y=164)#placing the entry
+   tkinter.Label(left, text="Normal Bed", font=('arial', 15, 'bold')).place(x=20, y=240)#creating new labels
+   b3=Entry(left, width=15, textvariable=Norbed)#new entry to input
+   b3.place(x=170, y=244)#placing the entry
    
    #Vaccine Update
-   tkinter.Label(right, text="Vaccine Available", font=('arial', 20, 'bold')).place(x=70, y=20)
+   tkinter.Label(right, text="Vaccine Available", font=('arial', 20, 'bold')).place(x=70, y=20)#creating new labels
    
    
-   tkinter.Label(right, text="Covaxin", font=('arial', 15, 'bold')).place(x=20, y=80)
-   Radiobutton(right, text="Available", variable=bhartakboi, value=1).place(x=180, y=80)
-   Radiobutton(right, text="Not-Available",  variable=bhartakboi, value=0).place(x=260, y=80)
+   tkinter.Label(right, text="Covaxin", font=('arial', 15, 'bold')).place(x=20, y=80)#creating new labels
+   Radiobutton(right, text="Available", variable=bhartakboi, value=1).place(x=180, y=80)     #creating radio button
+   Radiobutton(right, text="Not-Available",  variable=bhartakboi, value=0).place(x=260, y=80)#creating radio button
    
-   tkinter.Label(right, text="Covishield", font=('arial', 15, 'bold')).place(x=20, y=140)
-   Radiobutton(right, text="Available", variable=Astrazenca, value=1).place(x=180, y=140)
-   Radiobutton(right, text="Not-Available",  variable=Astrazenca, value=0).place(x=260, y=140)
+   tkinter.Label(right, text="Covishield", font=('arial', 15, 'bold')).place(x=20, y=140)#creating new labels
+   Radiobutton(right, text="Available", variable=Astrazenca, value=1).place(x=180, y=140)     #creating radio button
+   Radiobutton(right, text="Not-Available",  variable=Astrazenca, value=0).place(x=260, y=140)#creating radio button
    
-   tkinter.Label(right, text="Sputnik I", font=('arial', 15, 'bold')).place(x=20, y=200)
-   Radiobutton(right, text="Available", variable=sputnik, value=1).place(x=180, y=200)
-   Radiobutton(right, text="Not-Available",  variable=sputnik, value=0).place(x=260, y=200)
+   tkinter.Label(right, text="Sputnik I", font=('arial', 15, 'bold')).place(x=20, y=200)#creating new labels
+   Radiobutton(right, text="Available", variable=sputnik, value=1).place(x=180, y=200)     #creating radio button
+   Radiobutton(right, text="Not-Available",  variable=sputnik, value=0).place(x=260, y=200)#creating radio button
    
-   tkinter.Label(right, text="Sputnik V", font=('arial', 15, 'bold')).place(x=20, y=260)
-   Radiobutton(right, text="Available", variable=sputnikv, value=1).place(x=180, y=260)
-   Radiobutton(right, text="Not-Available",  variable=sputnikv, value=0).place(x=260, y=260)
+   tkinter.Label(right, text="Sputnik V", font=('arial', 15, 'bold')).place(x=20, y=260)#creating new labels
+   Radiobutton(right, text="Available", variable=sputnikv, value=1).place(x=180, y=260)     #creating radio button
+   Radiobutton(right, text="Not-Available",  variable=sputnikv, value=0).place(x=260, y=260)#creating radio button
    
-   tkinter.Label(right, text="DRDO-D2", font=('arial', 15, 'bold')).place(x=20, y=320)
-   Radiobutton(right, text="Available", variable=drdo, value=1).place(x=180, y=320)
-   Radiobutton(right, text="Not-Available",  variable=drdo, value=0).place(x=260, y=320)
+   tkinter.Label(right, text="DRDO-D2", font=('arial', 15, 'bold')).place(x=20, y=320)#creating new labels
+   Radiobutton(right, text="Available", variable=drdo, value=1).place(x=180, y=320)     #creating radio button
+   Radiobutton(right, text="Not-Available",  variable=drdo, value=0).place(x=260, y=320)#creating radio button
    
     
    
    
    
-   exitava= tkinter.Button(left, text="Update", command=Available_Beds,height= 1, width= 15, font=1, bg='green', fg='White').place(x=75, y=425)
-   exitava= tkinter.Button(right, text="Update",command=Available_vaccine , height= 1, width= 15, font=1, bg='green', fg='White').place(x=75, y=425)
-   exitava= tkinter.Button(ava, text="Exit", height= 1, width= 59, font=1, command=ava.destroy, bg='Red', fg='White').place(x=50, y=725)
+   exitava= tkinter.Button(left, text="Update", command=Available_Beds,height= 1, width= 15, font=1, bg='green', fg='White').place(x=75, y=425)     #creating button.
+   exitava= tkinter.Button(right, text="Update",command=Available_vaccine , height= 1, width= 15, font=1, bg='green', fg='White').place(x=75, y=425)#creating button.
+   exitava= tkinter.Button(ava, text="Exit", height= 1, width= 59, font=1, command=ava.destroy, bg='Red', fg='White').place(x=50, y=725)#creating button.
    
-   ava.mainloop()
+   ava.mainloop()#looping the tkinter window.
    
     
 
