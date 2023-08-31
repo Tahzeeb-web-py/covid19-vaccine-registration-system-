@@ -443,23 +443,23 @@ def cleardata():
 
 
 #.................................................................About us page..............................................
-def aboutus():
+def aboutus():#new module crated
     
     
-    abt=tkinter.Tk()
-    abt.geometry("1200x850")
-    abt["bg"]= "black"
-    abt_label=tkinter.Label(abt, text="ANJUMAN POLYTECHNIC,", font=('arial', 36, 'bold')).place(x=180, y=50)
-    abt_labelngp=tkinter.Label(abt, text="NAGPUR",fg='red', font=('arial', 36, 'bold')).place(x=795, y=50)
-    Button_abtexit=tkinter.Button(abt, text="Exit this Application",width=20,bg='brown',fg='white', command=abt.destroy).place(x=1000,y=10)
-    abt_labeladd=tkinter.Label(abt, text="Managed By Anjuman HAMI-E-ISLAM", fg='Blue', font=('arial', 15, 'bold')).place(x=430, y=120)    
-    abt_labelsub=tkinter.Label(abt, text="SUBMITTED BY:-Mohd Tahzeeb Khan \n Roll No: 30", font=20).place(x=425, y=300)
-    abt_labelSubject=tkinter.Label(abt, text="Subject: Programming in Python", font=20).place(x=460, y=250)
-    abt_labelsem=tkinter.Label(abt, text="Sixth Semester CO-6-I (I-Scheme)", font=20).place(x=450, y=500)
-    abt_labeltecher=tkinter.Label(abt, text="Subject Teacher: Mrs. Pallavi Maam \n Lecturer", font=20).place(x=430, y=400)
-    abt_labeltopic=tkinter.Label(abt, text="Topic: Covid19 Vaccine registration System", font=(20)).place(x=400, y=200)
+    abt=tkinter.Tk()#creating a instance for tkinter windows
+    abt.geometry("1200x850")#configing size of the window
+    abt["bg"]= "black"# configration for background color
+    abt_label=tkinter.Label(abt, text="ANJUMAN POLYTECHNIC,", font=('arial', 36, 'bold')).place(x=180, y=50)#creating a new label
+    abt_labelngp=tkinter.Label(abt, text="NAGPUR",fg='red', font=('arial', 36, 'bold')).place(x=795, y=50)#creating a new label
+    Button_abtexit=tkinter.Button(abt, text="Exit this Application",width=20,bg='brown',fg='white', command=abt.destroy).place(x=1000,y=10)#creating a new label
+    abt_labeladd=tkinter.Label(abt, text="Managed By Anjuman HAMI-E-ISLAM", fg='Blue', font=('arial', 15, 'bold')).place(x=430, y=120)    #creating a new label
+    abt_labelsub=tkinter.Label(abt, text="SUBMITTED BY:-Mohd Tahzeeb Khan \n Roll No: 30", font=20).place(x=425, y=300)#creating a new label
+    abt_labelSubject=tkinter.Label(abt, text="Subject: Programming in Python", font=20).place(x=460, y=250)#creating a new label
+    abt_labelsem=tkinter.Label(abt, text="Sixth Semester CO-6-I (I-Scheme)", font=20).place(x=450, y=500)#creating a new label
+    abt_labeltecher=tkinter.Label(abt, text="Subject Teacher: Mrs. Pallavi Maam \n Lecturer", font=20).place(x=430, y=400)#creating a new label
+    abt_labeltopic=tkinter.Label(abt, text="Topic: Covid19 Vaccine registration System", font=(20)).place(x=400, y=200)#creating a new label
 
-    mainloop()
+    mainloop()#looping the mainwindow.
     
 #...............................................................................................................................
 
