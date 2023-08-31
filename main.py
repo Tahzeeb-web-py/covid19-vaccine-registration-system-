@@ -726,29 +726,29 @@ def bed():
     coo.commit()
     coo.close()
 #.......................................execution of First function or main will start from this funtion......................................................
-def start():
-    global m
+def start():#starting function....
+    global m#creating a new variable with global scope named m
     
-    m=tkinter.Tk()
-    m.geometry("800x500")
-    m["bg"]= "NavajoWhite2"  
-    m.title("Life Care service, UserInterface")
-    vaccineshow()
-    bed()
+    m=tkinter.Tk()#creating a new instance for tkinter window
+    m.geometry("800x500")#configuring the size of the window
+    m["bg"]= "NavajoWhite2" #configuring the background 
+    m.title("Life Care service, UserInterface")#configuring the title of the window.
+    vaccineshow()#calling the function for entering updated details.
+    bed()#calling the function for entering updated details.
     
-    tkinter.Label(m, text="LifeCare Hospital Service", font=('arial', 36, 'bold'), bg='NavajoWhite3').place(x=100,y=20)
-    tkinter.Label(m, text="Raj Nagar, Nagpur", font=("arial", 15), bg='NavajoWhite3').place(x=330, y=80) 
-    tkinter.Label(m, text="ph.no.:7787565  LIC.No.: mpc5846d8\84", bg='NavajoWhite3').place(x=310, y=110)
-    tkinter.Label(m, text="lifecarehospitalshelp001@gmail.com", bg='NavajoWhite3').place(x=315, y=130)
-    Button= tkinter.Button(m, text="Vaccine Registration",height=1, width=17, font=1, command=Registrationform, fg='green').place(x=540, y=400)
-    buttonsignin=tkinter.Button(m, text="Login as Admins", height= 1, width= 17, font=1, command= admin,fg='blue').place(x=540, y=320)
-    exitm= tkinter.Button(m, text="Exit", height= 1, width= 17, font=1, command=m.destroy, bg='Red', fg='White').place(x=50, y=400)
-    exitm= tkinter.Button(m, text="About Us(Developer)", height= 1, width=17, font=1 , command= aboutus,bg='Green', fg='black').place(x=50, y=320)
+    tkinter.Label(m, text="LifeCare Hospital Service", font=('arial', 36, 'bold'), bg='NavajoWhite3').place(x=100,y=20)#Creating new labels
+    tkinter.Label(m, text="Raj Nagar, Nagpur", font=("arial", 15), bg='NavajoWhite3').place(x=330, y=80) #Creating new labels
+    tkinter.Label(m, text="ph.no.:7787565  LIC.No.: mpc5846d8\84", bg='NavajoWhite3').place(x=310, y=110)#Creating new labels
+    tkinter.Label(m, text="lifecarehospitalshelp001@gmail.com", bg='NavajoWhite3').place(x=315, y=130)#Creating new labels
+    Button= tkinter.Button(m, text="Vaccine Registration",height=1, width=17, font=1, command=Registrationform, fg='green').place(x=540, y=400)#creating a new button
+    buttonsignin=tkinter.Button(m, text="Login as Admins", height= 1, width= 17, font=1, command= admin,fg='blue').place(x=540, y=320)#creating a new button
+    exitm= tkinter.Button(m, text="Exit", height= 1, width= 17, font=1, command=m.destroy, bg='Red', fg='White').place(x=50, y=400)#creating a new button
+    exitm= tkinter.Button(m, text="About Us(Developer)", height= 1, width=17, font=1 , command= aboutus,bg='Green', fg='black').place(x=50, y=320)#creating a new button
 
-    m.resizable(False, False)
+    m.resizable(False, False)#configuring the resizing window size
     
     
-    m.mainloop()
+    m.mainloop()#looping the window.
 
 
 #......................................................function call to start execution of the program..................................
