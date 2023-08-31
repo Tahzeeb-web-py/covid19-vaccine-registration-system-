@@ -429,12 +429,12 @@ def emailsend(ema):
 
 #............................................................clear function.................................................
 def cleardata():
-    entry_1.delete(0, END)
-    entry_6.delete(0, END)
-    entry_7.delete(0, END)
-    entry_4.delete(0, END)
-    entry_5.delete(0, END)
-    entry_3.delete(0, END)
+    entry_1.delete(0, END)#clearing all the data entered in the field.
+    entry_6.delete(0, END)#clearing all the data entered in the field.
+    entry_7.delete(0, END)#clearing all the data entered in the field.
+    entry_4.delete(0, END)#clearing all the data entered in the field.
+    entry_5.delete(0, END)#clearing all the data entered in the field.
+    entry_3.delete(0, END)#clearing all the data entered in the field.
     
     #print('All fields clear')
 #.....................................................................................................................................
