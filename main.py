@@ -752,7 +752,7 @@ def start():
 
 
 #......................................................function call to start execution of the program..................................
-start()
+start()#this is the function call from where the execution will start.
 
 
 #.....................................................THE END OF THE PROGRAM............................................................
