@@ -416,13 +416,13 @@ def emailsend(ema):
    
    email=" "#Enter your Email address here
    password=" "#Enter lyour Email password Here
-   reciever=ema
-   smtpobj= smtplib.SMTP_SSL('smtp.gmail.com', 465)
-   smtpobj.login(email, password)
-   textmsz="Hello User, \n This Project is developed by Mohd Tahzeeb Khan............\n Roll no. 32............Enrollment no:1800760291 \n Subject: Python Programming \n  Subject Teacher: Pallavi Maam \n Session: 2020-21 \n Thank you user to use this covid-19 vaccination software, and please vaccinate your self and be safe from SARcovid-19.......\n Have a nice day"
-   subject="""Lifecare Vaccine registration"""
-   smtpobj.sendmail(email, reciever, textmsz, subject)
-   smtpobj.quit()
+   reciever=ema#initailzing the mail
+   smtpobj= smtplib.SMTP_SSL('smtp.gmail.com', 465)#config the server and the port no of the mail provider
+   smtpobj.login(email, password)#id and password of the mail id from which you want to send the mail
+   textmsz="Hello User, \n This Project is developed by Mohd Tahzeeb Khan............\n Roll no. 32............Enrollment no:1800760291 \n Subject: Python Programming \n  Subject Teacher: Pallavi Maam \n Session: 2020-21 \n Thank you user to use this covid-19 vaccination software, and please vaccinate your self and be safe from SARcovid-19.......\n Have a nice day"#msz to be send
+   subject="""Lifecare Vaccine registration"""#defining subject for the mail
+   smtpobj.sendmail(email, reciever, textmsz, subject)#sending mail
+   smtpobj.quit()#closing the mail's object
    return
 #................................................................................................................................
 
