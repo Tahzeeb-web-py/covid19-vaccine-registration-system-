@@ -691,40 +691,39 @@ def vaccineshow():
     dd.commit()
     cont.close()
 
-def bed():
-    coo=sqlite3.connect('CovidVaccine.db')
-    con=coo.cursor()
+def bed():#creating the module named bed
+    coo=sqlite3.connect('CovidVaccine.db')#connecting to the database
+    con=coo.cursor()#creating the cursor(instance)
     con.execute('''CREATE TABLE IF NOT EXISTS Available_beds
     (ID INT NOT NULL PRIMARY KEY, 
     oxygenbed INT NOT NULL,
     vantilatorbed INT NOT NULL,
-    normalbed INT NOT NULL);''')
-    con.execute("SELECT oxygenbed FROM Available_beds WHERE ID=1");
-    oxybed= con.fetchone()
-    con.execute("SELECT vantilatorbed FROM Available_beds WHERE ID=2");
-    vantibed=con.fetchone()
-    
-    con.execute("SELECT normalbed FROM Available_beds WHERE ID=3");
-    norbed=con.fetchone()
-    to= Frame(m, width=210, height= 130, bd= 8, bg='black', relief="groove")
+    normalbed INT NOT NULL);''')#Creating a new table if not already created.
+    con.execute("SELECT oxygenbed FROM Available_beds WHERE ID=1");#fetching the data
+    oxybed= con.fetchone()#fetching the only one data
+    con.execute("SELECT vantilatorbed FROM Available_beds WHERE ID=2");#fetching the data
+    vantibed=con.fetchone()#fetching the only one data
+    con.execute("SELECT normalbed FROM Available_beds WHERE ID=3");#fetching the data
+    norbed=con.fetchone()#fetching the only one data
+    to= Frame(m, width=210, height= 130, bd= 8, bg='black', relief="groove")#creating a new frame.
     to.place(x=300, y=320)
     
     
-    a=random.randrange(0, 120)
-    b=random.randrange(0, 120)
-    c=random.randrange(0, 120)
+    a=random.randrange(0, 120)#assigning new random values values.
+    b=random.randrange(0, 120)#assigning new random values values.
+    c=random.randrange(0, 120)#assigning new random values values.
     
-    flab=tkinter.Label(m, text="Available Isolation Beds", font=('times', 10), fg='White', bg='black').place(x=335, y=330)
-    flab=tkinter.Label(m, text="* Vantilator's Bed", font=('times', 10), fg='White', bg='black').place(x=325, y=365)
-    flab=tkinter.Label(m, text=vantibed, font=('times', 10), fg='black', bg='white').place(x=460, y=365)
-    flab=tkinter.Label(m, text="* Oxygen Beds", font=('times', 10), fg='White', bg='black').place(x=325, y=380)
-    flab=tkinter.Label(m, text=oxybed, font=('times', 10), fg='black', bg='white').place(x=460, y=380)
-    flab=tkinter.Label(m, text="* Covid Normal Beds", font=('times', 10), fg='White', bg='black').place(x=325, y=395)
-    flab=tkinter.Label(m, text=norbed, font=('times', 10), fg='black', bg='white').place(x=460, y=395)
-    flab=tkinter.Label(m, text="RT-PCR Test", font=('times', 10), fg='White', bg='black').place(x=335, y=420)
-    flab=tkinter.Label(m, text="Free", font=('times', 10), fg='black', bg='white').place(x=460, y=420)
-    coo.commit()
-    coo.close()
+    flab=tkinter.Label(m, text="Available Isolation Beds", font=('times', 10), fg='White', bg='black').place(x=335, y=330)#creating a new label
+    flab=tkinter.Label(m, text="* Vantilator's Bed", font=('times', 10), fg='White', bg='black').place(x=325, y=365)#creating a new label
+    flab=tkinter.Label(m, text=vantibed, font=('times', 10), fg='black', bg='white').place(x=460, y=365)#creating a new label
+    flab=tkinter.Label(m, text="* Oxygen Beds", font=('times', 10), fg='White', bg='black').place(x=325, y=380)#creating a new label
+    flab=tkinter.Label(m, text=oxybed, font=('times', 10), fg='black', bg='white').place(x=460, y=380)#creating a new label
+    flab=tkinter.Label(m, text="* Covid Normal Beds", font=('times', 10), fg='White', bg='black').place(x=325, y=395)#creating a new label
+    flab=tkinter.Label(m, text=norbed, font=('times', 10), fg='black', bg='white').place(x=460, y=395)#creating a new label
+    flab=tkinter.Label(m, text="RT-PCR Test", font=('times', 10), fg='White', bg='black').place(x=335, y=420)#creating a new label
+    flab=tkinter.Label(m, text="Free", font=('times', 10), fg='black', bg='white').place(x=460, y=420)#creating a new label
+    coo.commit()#saving and closing the database.
+    coo.close()#saving and closing the database.
 #.......................................execution of First function or main will start from this funtion......................................................
 def start():#starting function....
     global m#creating a new variable with global scope named m
