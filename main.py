@@ -485,37 +485,37 @@ def storedata():
      vaccine TEXT NOT NULL,
      dose TEXT NOT NULL,
      date1 TEXT NOT NULL);''')#created table called: Registration
-    full_name=entry_1.get()
-    identify=gender.get()
-    if(identify==1):
+    full_name=entry_1.get()#getting the data from the entry 
+    identify=gender.get()#getting the data from the entry 
+    if(identify==1):#condition
         gend='Male'
-    elif(identify==0):
+    elif(identify==0):#condition
         gend='Female'
-    else:
+    else:#else part
         gend='Transgender'
-    ag_e= entry_3.get()
-    mono=entry_4.get()
+    ag_e= entry_3.get()#getting the data from the entry 
+    mono=entry_4.get()#getting the data from the entry 
     t=str('+91')+" "+str(mono)
-    adhno=entry_5.get()
-    email_id=entry_6.get()
-    add_ress= entry_7.get()
-    vaccine=c.get()
-    fdo=f_dose.get()
-    sdo=s_dose.get()
-    tdo=t_dose.get()
+    adhno=entry_5.get()#getting the data from the entry 
+    email_id=entry_6.get()#getting the data from the entry 
+    add_ress= entry_7.get()#getting the data from the entry 
+    vaccine=c.get()#getting the data from the entry 
+    fdo=f_dose.get()#getting the data from the entry 
+    sdo=s_dose.get()#getting the data from the entry 
+    tdo=t_dose.get()#getting the data from the entry 
     if(fdo==1 and sdo==1 and tdo==1):
         duo='1st Dose, 2 Dose, 3rd Dose'
-    elif(fdo==1 and sdo==0 and tdo==0):
+    elif(fdo==1 and sdo==0 and tdo==0):#condition
         duo='1st Dose'
-    elif(fdo==0 and sdo==1 and tdo==0):
+    elif(fdo==0 and sdo==1 and tdo==0):#condition
         duo='2nd Dose'
-    elif(fdo==0 and sdo==0 and tdo==1):
+    elif(fdo==0 and sdo==0 and tdo==1):#condition
         duo='3rd Dose'
-    elif(fdo==1 and sdo==1 and tdo==0):
+    elif(fdo==1 and sdo==1 and tdo==0):#condition
         duo='1st & 2nd Dose'
-    elif(fdo==0 and sdo==1 and tdo==1):
+    elif(fdo==0 and sdo==1 and tdo==1):#condition
         duo='2nd & 3rd Dose'
-    elif(fdo==0 and sdo==0 and tdo==0):
+    elif(fdo==0 and sdo==0 and tdo==0):#condition
         duo='No dose is seleted'
     dateova=dateofvaacine
     
