@@ -638,58 +638,58 @@ def Registrationform():
 
 
 
-def vaccineshow():
-    dd=sqlite3.connect('CovidVaccine.db')
-    cont=dd.cursor()
+def vaccineshow():#Creating function named vaccineshow
+    dd=sqlite3.connect('CovidVaccine.db')#connecting to the database
+    cont=dd.cursor()#creating instance of the current database
     cont.execute('''CREATE TABLE IF NOT EXISTS Avaiable_vaccine
     (ID INT NOT NULL, 
     astrazenca INT NOT NULL,
     bharat INT NOT NULL,
     sputnik INT NOT NULL,
     sputnik2 INT NOT NULL,
-    drdo INT NOT NULL);''')
-    cont.execute("SELECT astrazenca FROM Avaiable_vaccine WHERE ID=1");
-    check=cont.fetchone()
+    drdo INT NOT NULL);''')#creating new table if not exists in the current database
+    cont.execute("SELECT astrazenca FROM Avaiable_vaccine WHERE ID=1");#selecting a vaccine with the id 1 in the database
+    check=cont.fetchone()#fetching the data
     if(check==(1,)):
-        aczs='Available'
+        aczs='Available'#intializing the variable ddrr with the string
     else:
-        aczs='Not-Available'
+        aczs='Not-Available'#intializing the variable ddrr with the string
     
-    cont.execute("SELECT bharat FROM Avaiable_vaccine WHERE ID=2");
-    checkl=cont.fetchone()
+    cont.execute("SELECT bharat FROM Avaiable_vaccine WHERE ID=2");#selecting a vaccine with the id 2 in the database
+    checkl=cont.fetchone()#fetching the data
     if(checkl==(1,)):
-        bbcs='Available'
+        bbcs='Available'#intializing the variable ddrr with the string
     else:
-        bbcs='Not-Available'
+        bbcs='Not-Available'#intializing the variable ddrr with the string
     
-    cont.execute("SELECT sputnik FROM Avaiable_vaccine WHERE ID=3");
-    checkn=cont.fetchone()
+    cont.execute("SELECT sputnik FROM Avaiable_vaccine WHERE ID=3");#selecting a vaccine with the id 3 in the database
+    checkn=cont.fetchone()#fetching the data
     if(checkn==(1,)):
-        rassainsput='Available'
+        rassainsput='Available'#intializing the variable ddrr with the string
     else:
-        rassainsput='Not-Available'
+        rassainsput='Not-Available'#intializing the variable ddrr with the string
     
-    cont.execute("SELECT drdo FROM Avaiable_vaccine WHERE ID=5");
-    checkk=cont.fetchone()
+    cont.execute("SELECT drdo FROM Avaiable_vaccine WHERE ID=5");#selecting a vaccine with the id 5 in the database
+    checkk=cont.fetchone()#fetching the data
     if(checkk==(1,)):
-        ddrr='Available'
+        ddrr='Available'#intializing the variable ddrr with the string
     else:
-        ddrr='Not-Available'
+        ddrr='Not-Available'#intializing the variable ddrr with the string
         
 
-#_________________________________________________Available Vaccines____________________________________________________________________
-    vac=Frame(m, width=500, height= 100, bd= 8, bg='black', relief="groove").place(x=150, y=200)
-    lab=tkinter.Label(m, text="Available Vaccines", font=('times', 10), fg='White', bg='black').place(x=350, y=210)
-    lab=tkinter.Label(m, text="* Bharat Boitech Covaxin", font=('times', 10), fg='White', bg='black').place(x=200, y=230)
-    show=tkinter.Label(m, text=bbcs, font=('times', 10), fg='black', bg='white').place(x= 350, y=230)
-    lab=tkinter.Label(m, text="* Astra zenca Covishield", font=('times', 10), fg='White', bg='black').place(x=200, y=260)
-    show=tkinter.Label(m, text=aczs, font=('times', 10), fg='black', bg='white').place(x= 350, y=260)
-    lab=tkinter.Label(m, text="* sputnik I & V", font=('times', 10), fg='White', bg='black').place(x=450, y=230)
-    show=tkinter.Label(m, text=rassainsput, font=('times', 10), fg='black', bg='white').place(x= 550, y=230)
-    lab=tkinter.Label(m, text="* DRDO- D2", font=('times', 10), fg='White', bg='black').place(x=450, y=260)
-    show=tkinter.Label(m, text=ddrr, font=('times', 10), fg='black', bg='white').place(x= 550, y=260)
-    dd.commit()
-    cont.close()
+#_______________________________________________UI Available Vaccines____________________________________________________________________
+    vac=Frame(m, width=500, height= 100, bd= 8, bg='black', relief="groove").place(x=150, y=200)#creating frame
+    lab=tkinter.Label(m, text="Available Vaccines", font=('times', 10), fg='White', bg='black').place(x=350, y=210)#Creating label
+    lab=tkinter.Label(m, text="* Bharat Boitech Covaxin", font=('times', 10), fg='White', bg='black').place(x=200, y=230)#Creating label
+    show=tkinter.Label(m, text=bbcs, font=('times', 10), fg='black', bg='white').place(x= 350, y=230)#Creating label
+    lab=tkinter.Label(m, text="* Astra zenca Covishield", font=('times', 10), fg='White', bg='black').place(x=200, y=260)#Creating label
+    show=tkinter.Label(m, text=aczs, font=('times', 10), fg='black', bg='white').place(x= 350, y=260)#Creating label
+    lab=tkinter.Label(m, text="* sputnik I & V", font=('times', 10), fg='White', bg='black').place(x=450, y=230)#Creating label
+    show=tkinter.Label(m, text=rassainsput, font=('times', 10), fg='black', bg='white').place(x= 550, y=230)#Creating label
+    lab=tkinter.Label(m, text="* DRDO- D2", font=('times', 10), fg='White', bg='black').place(x=450, y=260)#Creating label
+    show=tkinter.Label(m, text=ddrr, font=('times', 10), fg='black', bg='white').place(x= 550, y=260)#Creating label
+    dd.commit()#committing all the changes
+    cont.close()#closing the database.
 
 def bed():#creating the module named bed
     coo=sqlite3.connect('CovidVaccine.db')#connecting to the database
