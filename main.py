@@ -559,56 +559,56 @@ def Registrationform():
   
    
 
-    label_0 = tkinter.Label(reg, text="Vaccine Registration Form", width=25, font=("bold", 20), bg='sky blue', fg='Black')
+    label_0 = tkinter.Label(reg, text="Vaccine Registration Form", width=25, font=("bold", 20), bg='sky blue', fg='Black')#creating the label
     label_0.place(x=80, y=53)
 
-    label_1= Label(reg, text="Fullname:", width=20, font=("bold", 10))
+    label_1= Label(reg, text="Fullname:", width=20, font=("bold", 10))#creating the label
     label_1.place(x=80, y=130)
 
-    entry_1=Entry(reg, textvariable=Fullname, width=38)
+    entry_1=Entry(reg, textvariable=Fullname, width=38)#creating field box(Entry) for input
     entry_1.place(x=240, y=130)
 
-    label_2= Label(reg, text="Gender:", width=20, font=("bold", 10))
+    label_2= Label(reg, text="Gender:", width=20, font=("bold", 10))#creating the label
     label_2.place(x=80, y=180)
-    Radiobutton(reg, text="Male", variable=gender, value=1).place(x=240, y=180)
-    Radiobutton(reg, text="Female",  variable=gender, value=0).place(x=320, y=180)
-    Radiobutton(reg, text="Trans",  variable=gender, value=2).place(x=410, y=180)
+    Radiobutton(reg, text="Male", variable=gender, value=1).place(x=240, y=180)#creating options for radiobutton
+    Radiobutton(reg, text="Female",  variable=gender, value=0).place(x=320, y=180)#creating options for radiobutton
+    Radiobutton(reg, text="Trans",  variable=gender, value=2).place(x=410, y=180)#creating options for radiobutton
 
 
-    label_3= Label(reg, text="Age:", width=20, font=("bold", 10))
+    label_3= Label(reg, text="Age:", width=20, font=("bold", 10))#creating the label
     label_3.place(x=80, y=230)
 
-    entry_3=Entry(reg, textvariable=age, width=38)
+    entry_3=Entry(reg, textvariable=age, width=38)#creating field box(Entry) for input
     entry_3.place(x=240, y=230)
 
-    label_4= Label(reg, text="Mobile No:", width=20, font=("bold", 10))
+    label_4= Label(reg, text="Mobile No:", width=20, font=("bold", 10))#creating the label
     label_4.place(x=80, y=280)
 
-    label_18= Label(reg, text="+91", width=4, font=("bold", 10)).place(x=240, y=280)
-    entry_4=Entry(reg, textvariable=mobileno, width=32)
+    label_18= Label(reg, text="+91", width=4, font=("bold", 10)).place(x=240, y=280)#creating the label
+    entry_4=Entry(reg, textvariable=mobileno, width=32)#creating field box(Entry) for input
     entry_4.place(x=275, y=280)
 
-    label_5= Label(reg, text="Aadhar No:", width=20, font=("bold", 10))
+    label_5= Label(reg, text="Aadhar No:", width=20, font=("bold", 10))#creating the label
     label_5.place(x=80, y=330)
 
-    entry_5=Entry(reg, textvariable=adharno, width=38)
+    entry_5=Entry(reg, textvariable=adharno, width=38)#creating field box(Entry) for input
     entry_5.place(x=240, y=330)
 
-    label_6= Label(reg, text="Email Id:", width=20, font=("bold", 10))
+    label_6= Label(reg, text="Email Id:", width=20, font=("bold", 10))#creating the label
     label_6.place(x=80, y=380)
 
-    entry_6=Entry(reg, textvariable=Email, width=38)
+    entry_6=Entry(reg, textvariable=Email, width=38)#creating field box(Entry) for input
     entry_6.place(x=240, y=380)
 
-    label_7= Label(reg, text="Your Address:", width=20, font=("bold", 10))
+    label_7= Label(reg, text="Your Address:", width=20, font=("bold", 10))#creating the label
     label_7.place(x=80, y=420)
 
-    entry_7=Entry(reg, textvariable=address, width=38)
+    entry_7=Entry(reg, textvariable=address, width=38)#creating field box(Entry) for input
     entry_7.place(x=240, y=420)
 
 
 
-    label_8 = Label(reg, text="Vaccine:",width=20,font=("bold", 10))
+    label_8 = Label(reg, text="Vaccine:",width=20,font=("bold", 10))#creating the label
     label_8.place(x=80,y=470)
 
     list1 = ['Bharat Boitech Covaxin','Astra zenca Covishield','Sputnik Vaccine I', 'Sputnik Vaccine V', 'DRDO D-2'];
@@ -618,22 +618,22 @@ def Registrationform():
     c.set("<-Vaccines->") 
     droplist.place(x=240,y=470)
 
-    label_9 = Label(reg, text="Doses:",width=20,font=("bold", 10))
+    label_9 = Label(reg, text="Doses:",width=20,font=("bold", 10))#creating the label
     label_9.place(x=80,y=530)
     
-    Checkbutton(reg, text="1st Dose", onvalue=1, offvalue=0, variable=f_dose).place(x=240,y=530)
-    Checkbutton(reg, text="2nd Dose", onvalue=1, offvalue=0, variable=s_dose).place(x=320,y=530)
-    Checkbutton(reg, text="3rd Dose", onvalue=1, offvalue=0, variable=t_dose).place(x=400,y=530)
+    Checkbutton(reg, text="1st Dose", onvalue=1, offvalue=0, variable=f_dose).place(x=240,y=530)#creating options of the checkbutton
+    Checkbutton(reg, text="2nd Dose", onvalue=1, offvalue=0, variable=s_dose).place(x=320,y=530)#creating options of the checkbutton
+    Checkbutton(reg, text="3rd Dose", onvalue=1, offvalue=0, variable=t_dose).place(x=400,y=530)#creating options of the checkbutton
     
-    lab=Label(reg, text="*After you click submit Button Please wait for 10 seconds for comformation", width=65, font=("bold", 8), background='red')
+    lab=Label(reg, text="*After you click submit Button Please wait for 10 seconds for comformation", width=65, font=("bold", 8), background='red')#creating the label
     lab.place(x=80 ,y=590 )
 
-    Button_submit=tkinter.Button(reg, text="Submit Form",width=20,bg='brown',fg='white', command=storedata).place(x=320,y=630)
-    Button_clrscr=tkinter.Button(reg, text="Clear Form",width=20,bg='red',fg='black', command=cleardata).place(x=80,y=630)
-    button_exit=tkinter.Button(reg, text="Exit", width=50, bg='blue', fg='white', command=reg.destroy).place(x=90, y= 680)
+    Button_submit=tkinter.Button(reg, text="Submit Form",width=20,bg='brown',fg='white', command=storedata).place(x=320,y=630)#creating new buttons
+    Button_clrscr=tkinter.Button(reg, text="Clear Form",width=20,bg='red',fg='black', command=cleardata).place(x=80,y=630)#creating new buttons
+    button_exit=tkinter.Button(reg, text="Exit", width=50, bg='blue', fg='white', command=reg.destroy).place(x=90, y= 680)#creating new buttons
     
-    reg.resizable(False, False)
-    reg.mainloop()
+    reg.resizable(False, False)#configuring the resizing of the frame
+    reg.mainloop()#closing the mainloop for the frame
 #...................................storedata function(use to store user's info in database).........................................
 
 
