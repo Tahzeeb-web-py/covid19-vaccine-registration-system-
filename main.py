@@ -535,26 +535,26 @@ def storedata():
     
 
 #........................................................User Registration form Setup is Here....................................
-def Registrationform():
-    vaccinedate()
-    global entry_1, entry_3, entry_4, entry_5, entry_7, entry_6, gender, gender1, c, f_dose, s_dose, t_dose,reg, progress
-    reg=tkinter.Tk()
+def Registrationform():#Creating new function name Registrationform
+    vaccinedate()#function call
+    global entry_1, entry_3, entry_4, entry_5, entry_7, entry_6, gender, gender1, c, f_dose, s_dose, t_dose,reg, progress#declaring variables with global scope
+    reg=tkinter.Tk()#Creating instance of the tkinter
     reg.geometry("500x800") #size of widget
-    reg["bg"]= "sky blue"  
-    reg.title("Vaccine Registration Form")
+    reg["bg"]= "sky blue"  #configuration of the frame
+    reg.title("Vaccine Registration Form")#configuration of the frame
     
-    Fullname=StringVar()
-    Email=StringVar()
-    gender=IntVar(reg)
-    c=tkinter.StringVar(reg)
-    age=IntVar()
-    var=StringVar()
-    mobileno= StringVar()
-    adharno=StringVar()
-    f_dose=IntVar(reg)
-    s_dose=IntVar(reg)
-    t_dose=IntVar(reg)
-    address=StringVar()
+    Fullname=StringVar()#configuration of datatypes
+    Email=StringVar()#configuration of datatypes
+    gender=IntVar(reg)#configuration of datatypes
+    c=tkinter.StringVar(reg)#configuration of datatypes
+    age=IntVar()#configuration of datatypes
+    var=StringVar()#configuration of datatypes
+    mobileno= StringVar()#configuration of datatypes
+    adharno=StringVar()#configuration of datatypes
+    f_dose=IntVar(reg)#configuration for input
+    s_dose=IntVar(reg)#configuration for input
+    t_dose=IntVar(reg)#configuration for input
+    address=StringVar()#configuration of datatypes
     
   
    
